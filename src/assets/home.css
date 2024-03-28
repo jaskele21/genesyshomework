@@ -1,0 +1,61 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+@media (prefers-color-scheme: dark) {
+    .container{
+        background-color: #333;
+        color: #fff;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        column-count: 2;
+    }
+}
+.avatar {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+.prev-button,
+.next-button {
+    background-color: hsla(160, 100%, 37%, 1);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10%;
+
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+
+}
+
+.prev-button {
+    margin-right: auto;
+}
+
+.next-button {
+    margin-left: auto;
+}
